@@ -1,0 +1,11 @@
+.text-block__title {
+    color: black;
+}
+
+.text-block__price {
+    color: black;
+}
+
+.text_block__div {
+    display: flex;
+}

@@ -1,25 +1,66 @@
-import logo from './logo.svg';
+import Button from './components/Button'
+import Image from './components/ImageCard'
+import TextBlock from './components/TextBlock'
+// import LabelBlock from './components/LabelBlock'
+import Element from "./components/Element";
+
 import './App.css';
 
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="image-card">
+
+        <Image src="https://res.cloudinary.com/db46klhlo/image/upload/v1639056543/jakob-owens-O_bhy3TnSYU-unsplash.jpg" />
+
+      </div>
+
+      <div className="component-card">
+
+        <div className="component-des">
+        
+          <TextBlock Title="Backpack" Content="descrizione" Content1="34$" />
+
+        </div>
+
+
+
+        <div className="element__title">
+
+          <h2>Colors</h2>
+          <div className="element__div">
+            <div className="element__color1"> <Element /> </div>
+            <div className="element__color2"> <Element /> </div>
+            <div className="element__color2"> <Element /> </div>
+          </div>
+
+        </div>
+
+        <div className="element__title">
+
+          <h2>Size</h2>
+          <div className="element__div">
+            <div className="element__color1"> <Element Text="S" /> </div>
+            <div className="element__color2"> <Element Text="M" /> </div>
+            <div className="element__color2"> <Element Text="L" /> </div>
+          </div>
+
+        </div>
+
+        <Button Text="Add to Cart" />
+
+      </div>
+
+
+
+
+
     </div>
+
   );
 }
 
 export default App;
+
